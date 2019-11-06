@@ -1,12 +1,12 @@
 # census-rm
 Census RM service level repository
 
-###RM  Architecture
+### RM  Architecture
 ![RM Architecture](RM.jpeg)
 
 
-###RM Git repositories
-####Core repositories and infrastructure
+### RM Git repositories
+#### Core repositories and infrastructure
 For private repositories, you'll need to be logged in to Github and be a member of the correct user group.\
 [Terraform](https://github.com/ONSdigital/census-rm-terraform) (Private)\
 [Kubernetes](https://github.com/ONSdigital/census-rm-kubernetes) (Private)\
@@ -21,13 +21,13 @@ For private repositories, you'll need to be logged in to Github and be a member 
 [Print File Service](https://github.com/ONSdigital/census-rm-print-file-service)\
 [Exception Manager](https://github.com/ONSdigital/census-rm-exception-manager)
 
-####Optional repositories
+#### Optional repositories
 These are deployed and used as and when required:\
 [QID Batch Runner](https://github.com/ONSdigital/census-rm-qid-batch-runner)\
 [Sample Loader](https://github.com/ONSdigital/census-rm-sample-loader)\
 [DDL Scripts](https://github.com/ONSdigital/census-rm-ddl)
 
-####Dev tools and testing
+#### Dev tools and testing
 [Docker Dev](https://github.com/ONSdigital/census-rm-docker-dev)\
 [Toolbox](https://github.com/ONSdigital/census-rm-toolbox)\
 [Census RM Ops](https://github.com/ONSdigital/census-rm-ops)\
@@ -36,9 +36,9 @@ These are deployed and used as and when required:\
 
 
 
-###Testing code in GCP
+### Testing code in GCP
 
-####Make, tag and push a Docker image
+#### Make, tag and push a Docker image
 1. Clone the required Git repo and checkout the required branch
 1. Build the Docker image locally:
    * Python:
@@ -52,7 +52,7 @@ These are deployed and used as and when required:\
    * Log into Docker hub: ```docker login```
    * Push the Docker image tagged in the step above: ```docker push <tagged_docker_image>```
 
-####Amend the Kubernetes config and deploy the service to your GCP environment
+#### Amend the Kubernetes config and deploy the service to your GCP environment
 1. Amend the Kubernetes config to use the Docker image that you pushed to Docker hub in the previous step:
    * Most of the Kubernetes config lives in the [Kubernetes repo](https://github.com/ONSdigital/census-rm-kubernetes).
   Clone this locally and/or checkout and pull the latest Master changes
@@ -75,6 +75,6 @@ These are deployed and used as and when required:\
 3. Restart the application in GCP
    * Delete the running pod and allow GCP to start another one to pick up any changes
    
-####Run acceptance tests against your GCP environment
+#### Run acceptance tests against your GCP environment
 To run the full suite of acceptance tests against your GCP environment, follow the instructions 
 [here](https://github.com/ONSdigital/census-rm-acceptance-tests/blob/master/README.md)
