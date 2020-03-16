@@ -120,10 +120,10 @@ JPA also provides a special query language called JPQL, which is 'vendor agnosti
 
 Spring Data JPA provides a much more convenient way of querying the database, which is a kind of 'magic' where the name of a function creates the required query. So, if I had a table full of data about, for example, users, including their name and email address, I could write a method called `findByEmail(String email)` and Spring 'magic' would implement the query for me.
 
-(This reference guide)[https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods] is invaluable for finding out the kinds of database queries you can do without having to write any code - just write the correctly named method and 'Spring magic' happens.
+[This reference guide](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods) is invaluable for finding out the kinds of database queries you can do without having to write any code - just write the correctly named method and 'Spring magic' happens.
 
 ### Mockito
-There should be lots of good example code in the project already to follow, but (this guide)[https://www.baeldung.com/mockito-annotations] is a very good starting point.
+There should be lots of good example code in the project already to follow, but [this guide](https://www.baeldung.com/mockito-annotations) is a very good starting point.
 
 ### Everything else
 Google, click the top StackOverflow link, look for the reply with the most upvotes, double check that the reply isn't _really old_. There is far too much complexity in the assembled mass of open source technologies which constitutes RM to exhaustively cover everything. Unfortunately, it's not obvious just how much 'magic' is happening behind the scenes, because the point of the tech stack that we've chosen is to hide the plumbing and the chore of having to deal with things at a low level. The best approach is to embrace the stack we've chosen, because it should enable you to concentrate on writing the business logic and creating new features, and not having to worry about wiring everything together, or what pattern to follow, because the projects follow well-established conventions in terms of where you 'put stuff'.
