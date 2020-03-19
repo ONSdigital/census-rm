@@ -86,7 +86,7 @@ If you want to do further reading about Maven, the [homepage for the project is 
 I would advise against using the raw Maven reference documentation, because most of the 'clever stuff' we do with Maven comes from the Spring Boot Starter Parent project and the plugins we've used. While the documentation here might not seem very exhaustive, it does constitute most of what you need to know Maven is able to do, and to delve deeper into Maven's vast complexity would probably only serve to confuse and intimidate.
 
 ### Spring Boot
-Spring's 'quick start` guide might be worth having a play with. [You can find it here](https://spring.io/quickstart)
+Spring's 'quick start' guide might be worth having a play with. [You can find it here](https://spring.io/quickstart)
 
 The next guide/tutorial you might try [is this one from Baeldung](https://www.baeldung.com/spring-boot-start). Baeldung has the very best tutorials/guides out of all the sites on the web.
 
