@@ -51,3 +51,7 @@ Some of these depends on exactly how your tools are installed.
 Update pip and package tools with `pip install -U pip setuptools wheel`
 
 I recommend installing Pipenv with Brew but if you are using pipenv installed through pip then update it with `pip install -U pipenv`
+
+## Clear the PyCharm cache
+If you're having python issues in PyCharm it could be cache issues. 
+Try invalidating and restarting by clicking `File -> Invalidate Caches / Restart...`.
